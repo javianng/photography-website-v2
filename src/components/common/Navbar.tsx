@@ -45,33 +45,33 @@ export default function Navbar() {
                     </div>
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
-                            <li><a href="/AboutMe" className="flex w-36 justify-center font-extralight hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">About Me</a></li>
+                            <li><Link href="/AboutMe" className="flex w-36 justify-center font-extralight hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">About Me</Link></li>
                             <li>
                                 <details>
                                     <summary className="font-extralight">Portfolio</summary>
                                     <ul className="p-2">
-                                        <li><a href="/Street" className="font-extralight text-black">Street</a></li>
-                                        <li><a href="/Events" className="font-extralight text-black">Events</a></li>
+                                        <li><Link href="/Street" className="font-extralight text-black">Street</Link></li>
+                                        <li><Link href="/Events" className="font-extralight text-black">Events</Link></li>
                                     </ul>
                                 </details>
                             </li>
-                            <li><a href="/Series" className="flex w-36 justify-center font-extralight hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">Series</a></li>
+                            <li><Link href="/Series" className="flex w-36 justify-center font-extralight hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">Series</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="drawer-side z-50">
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-80 min-h-full bg-base-200">
+                <ul className="menu p-4 w-80 min-h-full bg-neutral-300 text-black">
                     {
                         NAVBAR_COMPONENT_DETAILS.map(({ name, href }: NavbarProps, i) => (
                             <li key={i}>
-                                <a
+                                <Link
                                     href={href}
                                     className="flex w-36 justify-start cap font-extralight"
                                 >
                                     {name}
-                                </a>
+                                </Link>
                             </li>
                         ))
                     }
