@@ -1,3 +1,4 @@
+import { Link } from "lucide-react"
 import Container from "../common/Container"
 
 export default function HeroTwo() {
@@ -18,6 +19,9 @@ export default function HeroTwo() {
                         <h2 className="text-3xl sm:text-4xl xl:text-5xl text-brand-200 font-extralight">
                             Check out my other website!
                         </h2>
+                        <a href="https://portfolio-website-pearl-tau.vercel.app/">
+                            <Link className="w-12 h-12 hover:text-neutral-500 transition duration-150 mt-4" />
+                        </a>
                     </div>
                 </div>
             </Container >
