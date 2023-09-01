@@ -15,14 +15,13 @@ const OPTION_DETAILS = [
     {
         image: myself,
         header: "street",
-        href: "/",
+        href: "/Street",
     },
     {
         image: myself,
-        header: "event",
-        href: "/",
+        header: "events",
+        href: "/Events",
     },
-
 ]
 
 export default function SplitHero() {

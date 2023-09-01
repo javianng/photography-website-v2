@@ -3,15 +3,19 @@ import Link from "next/link";
 const NAVBAR_COMPONENT_DETAILS = [
     {
         name: "About Me",
-        href: "#AboutMe",
+        href: "/AboutMe",
     },
     {
-        name: "Expertise",
-        href: "#Expertise",
+        name: "Street",
+        href: "/Street",
     },
     {
-        name: "Work",
-        href: "#Work",
+        name: "Events",
+        href: "/Events",
+    },
+    {
+        name: "Series",
+        href: "/Series",
     },
 ];
 
@@ -41,19 +45,17 @@ export default function Navbar() {
                     </div>
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
-                            {
-                                NAVBAR_COMPONENT_DETAILS.map(({ name, href }: NavbarProps, i) => (
-                                    <li key={i}>
-                                        <a
-                                            href={href}
-                                            className="flex w-36 justify-center lowercase font-extralight
-                                            hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500"
-                                        >
-                                            {name}
-                                        </a>
-                                    </li>
-                                ))
-                            }
+                            <li><a href="/AboutMe" className="flex w-36 justify-center font-extralight hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">About Me</a></li>
+                            <li>
+                                <details>
+                                    <summary className="font-extralight">Portfolio</summary>
+                                    <ul className="p-2">
+                                        <li><a href="/Street" className="font-extralight text-black">Street</a></li>
+                                        <li><a href="/Events" className="font-extralight text-black">Events</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a href="/Series" className="flex w-36 justify-center font-extralight hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">Series</a></li>
                         </ul>
                     </div>
                 </div>
