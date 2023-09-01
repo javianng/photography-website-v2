@@ -1,15 +1,16 @@
 import type { NextPage } from "next";
 import PageLayout from "~/components/common/PageLayout";
-import Header from "~/components/homepage/Header";
-
+import CarouselHeader from "~/components/homepage/CarouselHeader";
+import Hero from "~/components/homepage/Hero";
+import SplitHero from "~/components/homepage/SplitHero";
 
 const Home: NextPage = () => {
     return (
         <PageLayout>
             <main>
-                <div>
-                    <Header />
-                </div>
+                <CarouselHeader />
+                <Hero />
+                <SplitHero />
             </main>
         </PageLayout>
     );
