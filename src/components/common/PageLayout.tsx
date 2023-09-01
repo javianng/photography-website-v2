@@ -15,7 +15,7 @@ export default function PageLayout(props: PageLayoutProps) {
         children,
         title = "shotbyj.av",
         description = "Part-Time Developer, Part-Time Business Analyst, Full-Time Curious Adventurer",
-        className = "text-brand-300 bg-gray-50 w-screen h-screen"
+        className = "text-brand-300 bg-gray-50"
     } = props;
 
     return (
