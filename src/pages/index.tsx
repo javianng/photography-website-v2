@@ -6,6 +6,7 @@ import Hero from "~/components/homepage/Hero";
 import SplitHero from "~/components/homepage/SplitHero";
 import SeriesSection from "~/components/homepage/SeriesSection";
 import InstagramSection from "~/components/homepage/InstagramSection";
+import HeroTwo from "~/components/homepage/HeroTwo";
 
 const Home: NextPage = () => {
     return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
                 <Hero />
                 <SplitHero />
                 <SeriesSection />
+                <HeroTwo />
                 <InstagramSection />
             </main>
         </PageLayout>

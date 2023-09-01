@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const NAVBAR_COMPONENT_DETAILS = [
     {
         name: "About Me",
@@ -31,11 +33,11 @@ export default function Navbar() {
                         </label>
                     </div>
                     <div className="flex-1 font-extralight">
-                        <a href="/" className="btn w-36 justify-center bg-transparent border-0
+                        <Link href="/" className="btn w-36 justify-center bg-transparent border-0
                             lowercase font-extralight text-white
                             hover:bg-neutral-200 hover:bg-opacity-10 hover:text-neutral-500">
                             shotbyj.av
-                        </a>
+                        </Link>
                     </div>
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
@@ -64,7 +66,7 @@ export default function Navbar() {
                             <li key={i}>
                                 <a
                                     href={href}
-                                    className="flex w-36 justify-start lowercase font-extralight"
+                                    className="flex w-36 justify-start cap font-extralight"
                                 >
                                     {name}
                                 </a>

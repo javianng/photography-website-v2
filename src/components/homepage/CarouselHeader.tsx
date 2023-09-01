@@ -59,8 +59,7 @@ export default function CarouselHeader() {
             {IMAGE_DETAILS.map(({ image, alt, tag }: ImageProps, i) => (
                 <SwiperSlide key={i}>
                     <div className="flex w-screen h-screen">
-                        <Image src={image} alt={alt} layout="fill" objectFit="cover"
-                        />
+                        <Image src={image} alt={alt} layout="fill" objectFit="cover" />
                     </div>
                 </SwiperSlide>
             ))}
