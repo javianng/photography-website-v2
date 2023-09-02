@@ -274,4 +274,4 @@ export const SERIES_DETAILS = [
         subtitle: "subtitle",
         href: "/",
     },
-]
+];
