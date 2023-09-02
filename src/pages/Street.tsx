@@ -1,7 +1,11 @@
+import PageLayout from "~/components/common/PageLayout";
+
 export default function Street() {
     return (
-        <div>
-
-        </div>
+        <PageLayout>
+            <main>
+                <div className="h-16 bg-brand-300" />
+            </main>
+        </PageLayout>
     )
 }

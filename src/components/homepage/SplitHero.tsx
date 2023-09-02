@@ -3,7 +3,7 @@ import type { StaticImageData } from "next/image";
 
 // Images
 
-import myself from "public/myself.jpg"
+import StreetCover from "/public/CityScape/CityScape1.jpg"
 
 type OptionProps = {
     image: string | StaticImageData;
@@ -13,12 +13,12 @@ type OptionProps = {
 
 const OPTION_DETAILS = [
     {
-        image: myself,
+        image: StreetCover,
         header: "street",
         href: "/Street",
     },
     {
-        image: myself,
+        image: StreetCover,
         header: "events",
         href: "/Events",
     },

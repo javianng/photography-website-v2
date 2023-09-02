@@ -1,63 +1,15 @@
 import Container from "../common/Container";
 import Image from "next/image"
 import type { StaticImageData } from "next/image";
-
-// Images
-
-import myself from "public/myself.jpg"
 import { useState, useEffect } from "react";
+import { SERIES_DETAILS } from "../ImageDetails";
 
-type OptionProps = {
+type SeriesProps = {
     image: string | StaticImageData;
     title: string;
     subtitle: string;
     href: string;
 }
-
-const OPTION_DETAILS = [
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: myself,
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-]
 
 export default function SeriesSection() {
     const [cardsPerPage, setCardsPerPage] = useState(3);
@@ -78,7 +30,6 @@ export default function SeriesSection() {
             window.removeEventListener('resize', updateCardsPerPage);
         };
     }, []);
-
     return (
         <div className="shadow">
             <Container>
@@ -90,11 +41,11 @@ export default function SeriesSection() {
                         Series Posts
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-9 pt-14">
-                        {OPTION_DETAILS.slice(0, cardsPerPage).map(({ image, title, subtitle, href }: OptionProps, i) => (
+                        {SERIES_DETAILS.slice(0, cardsPerPage).map(({ image, title, subtitle, href }: SeriesProps, i) => (
                             <a href={href} key={i}>
                                 <div className="relative hover:scale-105 transition duration-300 shadow">
                                     <div key={i} className="flex aspect-square">
-                                        <Image src={image} alt={title} className="flex object-cover object-center" />
+                                        <Image src={image} alt={title} width={800} height={800} className="flex object-cover object-center" />
                                     </div>
                                     <h1 className="absolute z-50 bottom-20 w-full
                                     text-xl font-thin text-white text-center">

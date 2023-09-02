@@ -56,13 +56,15 @@ export default function CarouselHeader() {
                 "--swiper-pagination-bullet-inactive-color": "#fff"
             } as CSSProperties}
         >
-            {IMAGE_DETAILS.map(({ image, alt, tag }: ImageProps, i) => (
-                <SwiperSlide key={i}>
-                    <div className="flex w-screen h-screen">
-                        <Image src={image} alt={alt} layout="fill" objectFit="cover" />
-                    </div>
-                </SwiperSlide>
-            ))}
+            {IMAGE_DETAILS
+                .filter(({ tag }) => tag.includes("CarouselHeader"))
+                .map(({ image, alt, tag }: ImageProps, i) => (
+                    <SwiperSlide key={i}>
+                        <div className="flex w-screen h-screen">
+                            <Image src={image} alt={alt} layout="fill" objectFit="cover" />
+                        </div>
+                    </SwiperSlide>
+                ))}
             <hr className="absolute bottom-24 w-full z-50 justify-center" />
             <NavigationArrow />
         </Swiper>
