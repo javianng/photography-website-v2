@@ -372,16 +372,16 @@ export const INSTAGRAM_IMAGE_DETAILS = [
 
 export const SERIES_DETAILS = [
     {
-        image: "/Sapa/Sapa1.jpg",
-        title: "Landscape",
-        subtitle: "Sapa",
-        href: "/Series/Sapa",
-    },
-    {
         image: "/CityScape/CityScape2.jpg",
         title: "Street",
         subtitle: "Cityscape",
         href: "/Series/CityScape",
+    },
+    {
+        image: "/ComputingClub25MCAGM/ComputingClub25MCAGM3.jpg",
+        title: "Event",
+        subtitle: "Computing Club 25th MC AGM",
+        href: "/Series/ComputingClub25MCAGM",
     },
     {
         image: "/Hanoi/Hanoi1.jpg",
@@ -394,5 +394,35 @@ export const SERIES_DETAILS = [
         title: "Landscape",
         subtitle: "Hoi An & Danang",
         href: "/Series/HoiAnDanang",
+    },
+    {
+        image: "/LighthouseAndShipyard/LighthouseAndShipyard1.jpg",
+        title: "Landscape",
+        subtitle: "Lighthouse & Shipyard",
+        href: "/Series/LighthouseAndShipyard",
+    },
+    {
+        image: "/MarinaBaySunrise/MarinaBaySunrise1.jpg",
+        title: "Landscape",
+        subtitle: "Marina Bay Sunrise",
+        href: "/Series/HoiAnDanang",
+    },
+    {
+        image: "/NOCCareerLaunchpad/NOCCareerLaunchpad1.jpg",
+        title: "Event",
+        subtitle: "NOC x CareerLaunchpad",
+        href: "/Series/NOCCareerLaunchpad",
+    },
+    {
+        image: "/NOCHCMCBlock71Networking/NOCHCMCBlock71Networking1.jpg",
+        title: "Landscape",
+        subtitle: "Hoi An & Danang",
+        href: "/Series/HoiAnDanang",
+    },
+    {
+        image: "/Sapa/Sapa1.jpg",
+        title: "Landscape",
+        subtitle: "Sapa",
+        href: "/Series/Sapa",
     },
 ];

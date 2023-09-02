@@ -40,7 +40,7 @@ export default function SeriesSection() {
                     <h2 className="text-xl sm:text-3xl xl:text-5xl text-brand-300 font-light text-center">
                         Series Posts
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-9 pt-14">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-9 py-14">
                         {SERIES_DETAILS.slice(0, cardsPerPage).map(({ image, title, subtitle, href }: SeriesProps, i) => (
                             <a href={href} key={i}>
                                 <div className="relative hover:scale-105 transition duration-300 shadow">
@@ -58,6 +58,13 @@ export default function SeriesSection() {
                                 </div>
                             </a>
                         ))}
+                    </div>
+                    <div className="w-full">
+                        <a href="/Series" className="flex justify-center">
+                            <div className="btn">
+                                View All Series
+                            </div>
+                        </a>
                     </div>
                 </div>
             </Container>
