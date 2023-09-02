@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.6.0",
+    "@vercel/analytics": "^1.0.2",
+    "lucide-react": "^0.272.0",
     "next": "^13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sharp": "^0.32.5",
+    "swiper": "^10.2.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -23,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "autoprefixer": "^10.4.14",
+    "daisyui": "^3.6.4",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.13",
     "postcss": "^8.4.27",
