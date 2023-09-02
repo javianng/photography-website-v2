@@ -1,9 +1,8 @@
+import Image from "next/image";
 import Container from "~/components/common/Container";
 import Gallery from "~/components/common/Gallery";
 import PageLayout from "~/components/common/PageLayout";
-
 import coverImage from "/public/CityScape/CityScape8.jpg"
-import Image from "next/image";
 
 export default function Street() {
     return (

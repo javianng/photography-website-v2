@@ -251,27 +251,9 @@ export const INSTAGRAM_IMAGE_DETAILS = [
 
 export const SERIES_DETAILS = [
     {
-        image: "/CityScape/CityScape2.jpg",
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: "/CityScape/CityScape2.jpg",
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: "/CityScape/CityScape2.jpg",
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
-    },
-    {
-        image: "/CityScape/CityScape2.jpg",
-        title: "title",
-        subtitle: "subtitle",
-        href: "/",
+        image: "/Sapa/Sapa1.jpg",
+        title: "Landscape",
+        subtitle: "Sapa",
+        href: "/Series/Sapa",
     },
 ];
