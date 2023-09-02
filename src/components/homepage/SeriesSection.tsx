@@ -3,6 +3,7 @@ import Image from "next/image"
 import type { StaticImageData } from "next/image";
 import { useState, useEffect } from "react";
 import { SERIES_DETAILS } from "../ImageDetails";
+import Link from "next/link";
 
 type SeriesProps = {
     image: string | StaticImageData;
@@ -60,11 +61,11 @@ export default function SeriesSection() {
                         ))}
                     </div>
                     <div className="w-full">
-                        <a href="/Series" className="flex justify-center">
+                        <Link href="/Series" className="flex justify-center">
                             <div className="btn">
                                 View All Series
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </Container>

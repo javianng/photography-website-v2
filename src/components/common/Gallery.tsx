@@ -1,5 +1,6 @@
+import Image from "next/image"
 import { IMAGE_DETAILS } from "../ImageDetails";
-import Image, { StaticImageData } from "next/image"
+import type { StaticImageData } from "next/image"
 
 type GalleryProps = {
     filterString?: string;

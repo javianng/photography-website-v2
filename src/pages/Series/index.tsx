@@ -1,5 +1,6 @@
+import Image from "next/image"
+import type { StaticImageData } from "next/image"
 import { SERIES_DETAILS } from "~/components/ImageDetails";
-import Image, { StaticImageData } from "next/image"
 import Container from "~/components/common/Container";
 import PageLayout from "~/components/common/PageLayout";
 
