@@ -6,8 +6,8 @@ const NAVBAR_COMPONENT_DETAILS = [
         href: "/AboutMe",
     },
     {
-        name: "Street",
-        href: "/Street",
+        name: "Street And Landscape",
+        href: "/StreetAndLandscape",
     },
     {
         name: "Events",
@@ -50,7 +50,7 @@ export default function Navbar() {
                                 <details>
                                     <summary className="font-extralight">Portfolio</summary>
                                     <ul className="p-2">
-                                        <li><Link href="/Street" className="font-extralight text-black">Street</Link></li>
+                                        <li><Link href="/StreetAndLandscape" className="font-extralight text-black">Street And Landscape</Link></li>
                                         <li><Link href="/Events" className="font-extralight text-black">Events</Link></li>
                                     </ul>
                                 </details>

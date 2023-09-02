@@ -13,7 +13,7 @@ export default function Sapa() {
                     <div className="flex pt-4 pb-16">
                         <Image src={coverImage} className=" object-cover" alt={"street cover image"} />
                     </div>
-                    <Gallery filterString="street" />
+                    <Gallery filterString="Sapa" />
                 </Container>
             </main>
         </PageLayout>
