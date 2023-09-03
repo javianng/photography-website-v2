@@ -16,7 +16,7 @@ const OPTION_DETAILS = [
     {
         image: StreetCover,
         header: "street",
-        href: "/Street",
+        href: "/StreetAndLandscape",
     },
     {
         image: EventCover,
@@ -33,10 +33,11 @@ export default function SplitHero() {
                     <a href={href} key={i}>
                         <div key={i} className="flex h-full w-full grayscale hover:grayscale-0 transition duration-300">
                             <Image src={image} alt={header} className="flex object-cover object-center" />
-                            <h1 className="absolute bottom-[13%] left-[8%] z-50 
+                            {/* <h1 className="absolute bottom-[13%] left-[8%] z-50 
                                 text-5xl sm:text-6xl xl:text-7xl font-extralight text-white uppercase">
                                 {header}
-                            </h1>
+                            </h1> */}
+
                         </div>
                     </a>
                 ))}
