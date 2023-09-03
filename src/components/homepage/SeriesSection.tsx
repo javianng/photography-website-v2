@@ -46,7 +46,7 @@ export default function SeriesSection() {
                             <a href={href} key={i}>
                                 <div className="relative hover:scale-105 transition duration-300 shadow">
                                     <div key={i} className="flex aspect-square">
-                                        <Image src={image} alt={title} width={800} height={800} className="flex object-cover object-center" />
+                                        <Image src={image} alt={title} width={800} height={800} className="flex object-cover object-center h-full w-full" />
                                     </div>
                                     <h1 className="absolute z-50 bottom-20 w-full
                                     text-xl font-thin text-white text-center">
