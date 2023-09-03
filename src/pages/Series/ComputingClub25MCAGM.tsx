@@ -2,7 +2,7 @@ import Image from "next/image";
 import Container from "~/components/common/Container";
 import Gallery from "~/components/common/Gallery";
 import PageLayout from "~/components/common/PageLayout";
-import coverImage from "/public/CityScape/CityScape8.jpg"
+import coverImage from "/public/ComputingClub25MCAGM/ComputingClub25MCAGM16.jpg"
 
 export default function ComputingClub25MCAGM() {
     return (
