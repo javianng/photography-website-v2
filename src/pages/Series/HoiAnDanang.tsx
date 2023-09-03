@@ -18,7 +18,7 @@ export default function HoiAnDanang() {
                             Hoi An and Danang, Vietnam
                         </h1>
                         <h2 className="text-3xl sm:text-4xl xl:text-5xl text-brand-200 font-extralight">
-                            Hoi An's Timeless Beauty and Danang's Modern Marvels
+                            Hoi An&apos;s Timeless Beauty and Danang&apos;s Modern Marvels
                         </h2>
                     </div>
                     <Gallery filterString="HoiAnDanang" />

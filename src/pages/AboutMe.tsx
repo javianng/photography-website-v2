@@ -96,7 +96,7 @@ export default function AboutMe() {
                         <div className="flex flex-col gap-4 pt-4">
                             {SOCIAL_MEDIA_DETAILS
                                 .map(({ href, type }: Props, i) => (
-                                    <a href={href} className="text-3xl sm:text-4xl xl:text-5xl text-neutral-800 font-extralight w-fit 
+                                    <a href={href} key={i} className="text-3xl sm:text-4xl xl:text-5xl text-neutral-800 font-extralight w-fit 
                                         hover:translate-x-4 transition duration-300 hover:text-brand-200">
                                         {type}
                                     </a>

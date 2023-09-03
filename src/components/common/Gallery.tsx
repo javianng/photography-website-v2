@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { IMAGE_DETAILS } from "../ImageDetails";
-import type { StaticImageData } from "next/image"
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 
