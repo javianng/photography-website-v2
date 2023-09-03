@@ -1,4 +1,4 @@
-import Container from "../common/Container"
+import Container from "./Container"
 import Image from "next/image"
 import myself from "public/myself.jpg"
 
