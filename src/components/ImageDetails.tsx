@@ -1073,21 +1073,14 @@ export const IMAGE_DETAILS = [
 ]
 
 export const INSTAGRAM_IMAGE_DETAILS = [
-    {
-        image: "/Sapa/Sapa36.jpg",
-        alt: "image",
-        href: "https://www.instagram.com/p/CvyvFb2SwJR/?utm_source=ig_web_button_share_sheet&igshid=MzRlODBiNWFlZA==",
-    },
-    {
-        image: "/CityScape/CityScape2.jpg",
-        alt: "image",
-        href: "/",
-    },
-    {
-        image: "/CityScape/CityScape3.jpg",
-        alt: "image",
-        href: "/",
-    },
+    "https://www.instagram.com/p/CvyvFb2SwJR/",
+    "https://www.instagram.com/p/Co3VC3jy9Wt/",
+    "https://www.instagram.com/p/CuGLpARy_Rx/",
+    "https://www.instagram.com/p/CmqngY1y3hw/",
+    "https://www.instagram.com/p/CtvihGNSMzf/",
+    "https://www.instagram.com/p/ClqsdBgS2aM/",
+    "https://www.instagram.com/p/Ctfumi1SrLU/",
+    "https://www.instagram.com/p/CsginwbSbG1/",
 ]
 
 export const SERIES_DETAILS = [
