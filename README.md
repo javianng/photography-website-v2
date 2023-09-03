@@ -9,6 +9,8 @@
 <br />
 <div align="center">
 
+<Image src="public/favicon.ico"/>
+
   <h3 align="center">Photography Website V2</h3>
 
   <p align="center">
