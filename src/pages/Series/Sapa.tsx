@@ -2,7 +2,7 @@ import Image from "next/image";
 import Container from "~/components/common/Container";
 import Gallery from "~/components/common/Gallery";
 import PageLayout from "~/components/common/PageLayout";
-import coverImage from "/public/CityScape/CityScape8.jpg"
+import coverImage from "/public/Sapa/Sapa23.jpg"
 
 export default function Sapa() {
     return (
