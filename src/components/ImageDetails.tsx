@@ -34,7 +34,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/CityScape/CityScape7.jpg",
         alt: "City Images",
-        tag: ['CityScape', 'street&landscape&landscape', 'CarouselHeader'],
+        tag: ['CityScape', 'street&landscape&landscape'],
     },
     {
         image: "/CityScape/CityScape8.jpg",
@@ -107,7 +107,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/Hanoi/Hanoi11.jpg",
         alt: "Hanoi, Vietnam",
-        tag: ['street&landscape', 'Hanoi'],
+        tag: ['street&landscape', 'Hanoi', 'CarouselHeader'],
     },
     {
         image: "/Hanoi/Hanoi12.jpg",
@@ -132,7 +132,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/Hanoi/Hanoi16.jpg",
         alt: "Hanoi, Vietnam",
-        tag: ['street&landscape', 'Hanoi'],
+        tag: ['street&landscape', 'Hanoi', 'CarouselHeader'],
     },
 
     // HoiAnDanang
@@ -145,7 +145,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/HoiAnDanang/HoiAnDanang2.jpg",
         alt: "Hoi An & Da Nang",
-        tag: ['street&landscape', 'HoiAnDanang'],
+        tag: ['street&landscape', 'HoiAnDanang', 'CarouselHeader'],
     },
     {
         image: "/HoiAnDanang/HoiAnDanang3.jpg",
@@ -195,7 +195,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/HoiAnDanang/HoiAnDanang12.jpg",
         alt: "Hoi An & Da Nang",
-        tag: ['street&landscape', 'HoiAnDanang'],
+        tag: ['street&landscape', 'HoiAnDanang', 'CarouselHeader'],
     },
     {
         image: "/HoiAnDanang/HoiAnDanang13.jpg",
@@ -398,7 +398,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/LighthouseAndShipyard/LighthouseAndShipyard35.jpg",
         alt: "Lighthouse and Shipyard",
-        tag: ['street&landscape', 'LighthouseAndShipyard'],
+        tag: ['street&landscape', 'LighthouseAndShipyard', 'CarouselHeader'],
     },
     {
         image: "/LighthouseAndShipyard/LighthouseAndShipyard36.jpg",
@@ -426,7 +426,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/MarinaBaySunrise/MarinaBaySunrise4.jpg",
         alt: "Marina Bay Sunrise",
-        tag: ['MarinaBaySunrise', 'street&landscape'],
+        tag: ['MarinaBaySunrise', 'street&landscape', 'CarouselHeader'],
     },
     {
         image: "/MarinaBaySunrise/MarinaBaySunrise5.jpg",
@@ -436,7 +436,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/MarinaBaySunrise/MarinaBaySunrise6.jpg",
         alt: "Marina Bay Sunrise",
-        tag: ['MarinaBaySunrise', 'street&landscape'],
+        tag: ['MarinaBaySunrise', 'street&landscape', 'CarouselHeader'],
     },
     {
         image: "/MarinaBaySunrise/MarinaBaySunrise7.jpg",
@@ -564,7 +564,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/Sapa/Sapa23.jpg",
         alt: "Sapa, Vietnam",
-        tag: ['street&landscape', 'Sapa'],
+        tag: ['street&landscape', 'Sapa', 'CarouselHeader'],
     },
     {
         image: "/Sapa/Sapa24.jpg",
@@ -574,7 +574,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/Sapa/Sapa25.jpg",
         alt: "Sapa, Vietnam",
-        tag: ['street&landscape', 'Sapa'],
+        tag: ['street&landscape', 'Sapa', 'CarouselHeader'],
     },
     {
         image: "/Sapa/Sapa26.jpg",
@@ -639,7 +639,7 @@ export const IMAGE_DETAILS = [
     {
         image: "/Sapa/Sapa38.jpg",
         alt: "Sapa, Vietnam",
-        tag: ['street&landscape', 'Sapa'],
+        tag: ['street&landscape', 'Sapa', 'CarouselHeader'],
     },
     {
         image: "/Sapa/Sapa39.jpg",
@@ -710,6 +710,16 @@ export const IMAGE_DETAILS = [
         image: "/Sapa/Sapa52.jpg",
         alt: "Sapa, Vietnam",
         tag: ['street&landscape', 'Sapa'],
+    },
+    {
+        image: "/Sapa/Sapa53.jpg",
+        alt: "Sapa, Vietnam",
+        tag: ['street&landscape', 'Sapa'],
+    },
+    {
+        image: "/Sapa/Sapa54.jpg",
+        alt: "Sapa, Vietnam",
+        tag: ['street&landscape', 'Sapa', 'CarouselHeader'],
     },
 
     // NOCCareerLaunchpad
