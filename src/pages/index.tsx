@@ -9,18 +9,18 @@ import InstagramSection from "~/components/homepage/InstagramSection";
 import HeroTwo from "~/components/homepage/HeroTwo";
 
 const Home: NextPage = () => {
-    return (
-        <PageLayout>
-            <main>
-                <CarouselHeader />
-                <Hero />
-                <SplitHero />
-                <SeriesSection />
-                <HeroTwo />
-                <InstagramSection />
-            </main>
-        </PageLayout>
-    );
+  return (
+    <PageLayout>
+      <main>
+        <CarouselHeader />
+        <Hero />
+        <SplitHero />
+        <SeriesSection />
+        <HeroTwo />
+        <InstagramSection />
+      </main>
+    </PageLayout>
+  );
 };
 
 export default Home;
