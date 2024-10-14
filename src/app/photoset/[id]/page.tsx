@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button } from "~/components/ui/button";
+import LoadingPage from "~/components/ui/LoadingPage";
 
 interface Photo {
   id: string;
@@ -19,9 +20,9 @@ interface Params {
 
 const Photoset = ({ params }: { params: Params }) => {
   const { id } = params;
-  const [photos, setPhotos] = useState<Photo[]>([]);
-  const [loading, setLoading] = useState(true);
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
+  const [photos, setPhotos] = useState<Photo[]>([]);
 
   useEffect(() => {
     const fetchPhotos = async () => {
@@ -40,7 +41,7 @@ const Photoset = ({ params }: { params: Params }) => {
   }, [id]);
 
   if (loading) {
-    return <h2>Loading photos...</h2>;
+    return <LoadingPage />;
   }
 
   return (

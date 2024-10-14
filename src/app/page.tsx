@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { Button } from "~/components/ui/button";
-import LoadingPage from "~/components/ui/LoadingPage";
+import { Skeleton } from "~/components/ui/skeleton";
 import { LayoutGrid } from "lucide-react";
 
 interface Photoset {
@@ -63,10 +63,6 @@ export default function Home() {
     void fetchPhotosets();
   }, []);
 
-  if (loading) {
-    return <LoadingPage />;
-  }
-
   return (
     <main className="container flex flex-col items-center py-10">
       <section className="flex w-2/3 flex-col items-center gap-3 py-6">
@@ -82,34 +78,44 @@ export default function Home() {
           height={20}
         />
       </section>
-      <section>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {photosets.map((set) => (
-            <Button
-              key={set.id}
-              variant="none"
-              size="none"
-              onClick={() => router.push(`/photoset/${set.id}`)}
-              className="group"
-            >
-              <div className="relative">
-                <Image
-                  src={`https://live.staticflickr.com/${set.server}/${set.primary}_${set.secret}_c.jpg`}
-                  alt={set.title._content}
-                  width={300}
-                  height={300}
-                  className="aspect-square object-cover object-center"
-                />
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black opacity-0 transition-opacity duration-200 group-hover:opacity-70">
-                  <h2 className="pt-4 font-thin text-white">
-                    {set.title._content}
-                  </h2>
-                  <small className="font-thin text-white">view album</small>
-                </div>
+
+      <section className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+        {loading
+          ? Array.from({ length: 6 }).map((_, index) => (
+              <div
+                key={index}
+                className="aspect-square animate-pulse space-y-2"
+              >
+                <Skeleton className="h-[calc(100%_-_3rem)] w-full bg-gray-300" />
+                <Skeleton className="h-4 w-2/3 bg-gray-300" />
+                <Skeleton className="h-4 w-2/3 bg-gray-300" />
               </div>
-            </Button>
-          ))}
-        </div>
+            ))
+          : photosets.map((set) => (
+              <Button
+                key={set.id}
+                variant="none"
+                size="none"
+                onClick={() => router.push(`/photoset/${set.id}`)}
+                className="group overflow-clip rounded-sm shadow-sm"
+              >
+                <div className="relative">
+                  <Image
+                    src={`https://live.staticflickr.com/${set.server}/${set.primary}_${set.secret}_c.jpg`}
+                    alt={set.title._content}
+                    width={300}
+                    height={300}
+                    className="aspect-square object-cover object-center"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black opacity-0 transition-opacity duration-200 group-hover:opacity-70">
+                    <h2 className="pt-4 font-thin text-white">
+                      {set.title._content}
+                    </h2>
+                    <small className="font-thin text-white">view album</small>
+                  </div>
+                </div>
+              </Button>
+            ))}
       </section>
     </main>
   );
