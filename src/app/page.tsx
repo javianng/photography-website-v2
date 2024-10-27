@@ -2,8 +2,8 @@
 
 import axios from "axios";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Button } from "~/components/ui/button";
 import { Skeleton } from "~/components/ui/skeleton";
 
