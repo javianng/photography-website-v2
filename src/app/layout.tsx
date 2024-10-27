@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { Button } from "~/components/ui/button";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "shotbyj.av",
@@ -15,27 +16,30 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const currentYear = new Date().getFullYear();
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="flex min-h-screen flex-col items-center justify-center">
+    <html
+      lang="en"
+      className={`${GeistSans.variable} flex justify-center px-2 sm:px-10`}
+    >
+      <body className="flex min-h-screen w-full max-w-7xl flex-col items-center justify-center">
         {/* Navigation Bar */}
-        <nav className="container flex flex-row items-center justify-between bg-white py-4 shadow-sm">
+        <nav className="container flex w-full flex-row items-center justify-between bg-white py-4 shadow-sm">
           <h1 className="font-thin">shotbyj.av</h1>
           <div className="space-x-2">
             <Button variant="link" size="none">
-              <a className="font-thin" href="#work">
+              <Link className="font-thin" href="/">
                 work
-              </a>
+              </Link>
             </Button>
             <Button variant="link" size="none">
-              <a className="font-thin" href="#contact">
+              <Link className="font-thin" href="/about-me">
                 contact
-              </a>
+              </Link>
             </Button>
           </div>
         </nav>
 
         {/* Main Content */}
-        <main className="flex flex-grow items-center justify-center">
+        <main className="flex w-full flex-grow items-center justify-center">
           {children}
         </main>
 

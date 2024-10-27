@@ -4,10 +4,8 @@ import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-
 import { Button } from "~/components/ui/button";
 import { Skeleton } from "~/components/ui/skeleton";
-import { LayoutGrid } from "lucide-react";
 
 interface Photoset {
   id: string;
@@ -72,12 +70,9 @@ export default function Home() {
           unnoticed. Every corner holds a story, and every horizon whispers of
           distant lands waiting to be explored.
         </p>
-        <LayoutGrid
-          className="mt-10 fill-neutral-500 stroke-neutral-500"
-          width={20}
-          height={20}
-        />
       </section>
+
+      <hr className="mb-10 h-[1px] w-full bg-neutral-200" />
 
       <section className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
         {loading
@@ -103,8 +98,8 @@ export default function Home() {
                   <Image
                     src={`https://live.staticflickr.com/${set.server}/${set.primary}_${set.secret}_c.jpg`}
                     alt={set.title._content}
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={500}
                     className="aspect-square object-cover object-center"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-black opacity-0 transition-opacity duration-200 group-hover:opacity-70">
