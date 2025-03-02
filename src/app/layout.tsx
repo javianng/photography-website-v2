@@ -1,21 +1,16 @@
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import Link from "next/link";
-import { ModeToggle } from "~/components/mode-toggle";
+import { Footer } from "~/components/layout/footer";
+import { Navbar } from "~/components/layout/navbar";
 import { ThemeProvider } from "~/components/theme-provider";
-import { Button } from "~/components/ui/button";
+import { METADATA } from "~/lib/constants";
 import "~/styles/globals.css";
 
-export const metadata: Metadata = {
-  title: "shotbyj.av",
-  description: "photographer, coder, entrepreneur",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
-};
+export const metadata: Metadata = METADATA;
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const currentYear = new Date().getFullYear();
   return (
     <html
       lang="en"
@@ -28,37 +23,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* Navigation Bar */}
-          <nav className="container flex w-full flex-row items-center justify-between border border-none bg-white py-4 dark:bg-transparent">
-            <Button variant="none" size="none">
-              <Link className="font-thin" href="/">
-                shotbyj.av
-              </Link>
-            </Button>
-            <div className="space-x-2">
-              <Button variant="link" size="none">
-                <Link className="font-thin" href="/">
-                  work
-                </Link>
-              </Button>
-              <Button variant="link" size="none">
-                <Link className="font-thin" href="/about-me">
-                  about me
-                </Link>
-              </Button>
-              <ModeToggle />
-            </div>
-          </nav>
-
-          {/* Main Content */}
+          <Navbar />
           <main className="flex w-full flex-grow items-center justify-center">
             {children}
           </main>
-
-          {/* Footer */}
-          <footer className="flex items-center justify-center py-4 font-thin lowercase text-neutral-500">
-            <small>copyright &copy; Javian Ng {currentYear}</small>
-          </footer>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
